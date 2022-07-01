@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms demo</title>
+</head>
+
+<body>
+    <h1>FORMS DEMO</h1>
+
+
+
+    <form action="/fenerbahçe">
+        <div>
+            <label for="username">enter a username:</label>
+            <input id="username" type="text" placeholder="enter a username" name="username">
+        </div>
+        <div>
+            <label for="password">enter a password</label>
+            <input type="password" name="password" id="password" placeholder="password please">
+        </div>
+        <div>
+            <label for="number">enter a number</label>
+            <input type="number" name="num" id="number" placeholder="enter a number" min="5" max="5000000" step="3">
+        </div>
+        <div>
+            <label for="color">enter a color</label>
+            <input type="color" name="color" id="color" placeholder="enter a color">
+        </div>
+        <button>submit</button>
+    </form>
+
+    <button>subscribe</button>
+    <h2>learned search</h2>
+    <h3>for google</h3>
+
+    <form action="https://www.google.com/search" target="_blank">
+        <input type="text" name="q">
+        <button>click me for google search</button>
+    </form>
+
+    <h3>for fenerium</h3>
+    <form action="https://fenerium.com/kategori-urunarama" target="_blank">
+        <input type="text" name="keyword">
+        <button>click me for buy something</button>
+    </form>
+    <h3>for youtube</h3>
+    <form action="https://www.youtube.com/results" target="_blank">
+        <input type="text" name="search_query">
+        <button>click me for searching on youtube</button>
+    </form>
+    <h2>more input</h2>
+    <h3>can you do the loundry please?</h3>
+    <form action="tasks">
+        <div>
+            <input type="checkbox" name="yes" id="task">
+            <label for="task">yes 1 can</label>
+            <button>submit</button>
+        </div>
+        <div>
+            <input type="checkbox" name="no" id="task2">
+            <label for="task2">no ı can't</label>
+            <button>submit</button>
+        </div>
+        <h3>choose one of them</h3>
+
+        <legend>do you like me?</legend>
+        <div>
+            <input type="radio" name="love" id="yes" value="yes">
+            <label for="yes">yes,i like you</label>
+        </div>
+        <div>
+            <input type="radio" name="love" id="no" value="no">
+            <label for="no">no,i don't like you</label>
+        </div>
+        <div>
+            <input type="radio" name="love" id="dontknow" value="dontknow">
+            <label for="dontknow">i don't know</label>
+        </div>
+
+
+        <div>
+            <label for="choosing team">choose a team:</label><br>
+            <select name="team" id="choosing team">
+                <option value="">--please choose an option--</option>
+                <option value="fenerbahçe">Fenerbahçe</option>
+                <option value="6saray">6Saray</option>
+                <option value="8taş">8Taş</option>
+                <option value="hamsispor">Hamsispor</option>
+            </select>
+        </div>
+        <p>
+            <label for="music">music level</label>
+            <input type="range" name="levelofmusic" id="music" min="1" max="100" value="78">
+        </p>
+
+        <p>
+            <label for="request">anything you want to say:</label><br>
+            <textarea name="request?" id="request" rows="10" cols="70" placeholder="text here please"></textarea>
+        </p>
+
+        <button>click for results</button>
+    </form>
+    <h2>valitadions demo</h2>
+    <form action="/dummy">
+        <label for="name">enter first name</label>
+        <input type="text" name="first" id="name" required>
+        <p>
+            <label for="username">Enter a username</label>
+            <input type="text" name="Username" id="username" minlength="4" maxlength="16" required>
+        </p>
+        <button>submit</button>
+    </form>
+</body>
+
+</html>
